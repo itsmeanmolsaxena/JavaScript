@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module demo</title>
+    <!-- 
+       Inside index.html, you need to tell the browser, first of all there are two files now.
+       And second of all, these two files on our modules, they may rely on each other and
+       it's important that they're both loaded before things work properly.
+       Interestingly, when you set the type attributes to module, both of these automatically get deferred.
+       So they will only run after everything else has happened to ensure that the browser has
+       all the modules available before anything gets rendered out.
+     -->
+    <script type="module" src="backpack.js"></script>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body></body>
+</html>
